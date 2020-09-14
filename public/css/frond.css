@@ -1,0 +1,12 @@
+.navegacion_app:hover{
+    background: white;
+
+}
+.dropdown-toggle::after {
+    display:none;
+}
+#tamaño{
+    font-family: 'Merienda', cursive;
+}
+
+

@@ -1,0 +1,11 @@
+
+#contenedor{
+    padding-top:50px
+}
+.card{
+    height:400px;
+}
+
+.card:hover{
+    background: #abebc6;
+}

@@ -1,0 +1,88 @@
+.linea_vertical{
+    width: 1px;
+    height: 390px;
+    background:#1fc8e3;
+    float: left;
+}
+.linea_orizontal{
+    width: 100%;
+    height: 1px;
+    background:#1fc8e3;
+    float: left;
+}
+.controles{
+    color:#ffffff;
+}
+.color_size{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: #000b16;
+    color: white;
+}
+
+/*cambiar color del indicador carrusel*/
+ol.carousel-indicators {
+    position: absolute;
+    bottom: 5px;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    border-radius: 50%;
+    border: 0;
+    background: transparent;
+}
+
+ol.carousel-indicators li {
+    background:#8a8a8a;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+ol.carousel-indicators li.active {
+    background:#0c0c0c;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #000b16;
+    color: white;
+}
+.owl-carousel .owl-nav button.owl-next{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    background-color: #000b16;
+}
+.card{
+    height:400px;
+}
+.card:hover{
+    background: #abebc6;
+}
