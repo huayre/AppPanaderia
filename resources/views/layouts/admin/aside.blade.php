@@ -20,7 +20,7 @@
                     <a href="#" class="nav-link bg-warning">
                         <i class="nav-icon far fa-images"></i>
                         <p>
-                            Almacén
+                            Almacen Materia Prima
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -28,7 +28,7 @@
                         <li class="nav-item">
                             <a href="{{route('article.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon text-primary"></i>
-                                <p>Productos</p>
+                                <p>Productos </p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -43,7 +43,7 @@
                     <a href="#" class="nav-link bg-warning">
                         <i class="nav-icon fas fa-laptop-code"></i>
                         <p>
-                            Entrada Producto
+                            Entrada Materia Prima
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -62,12 +62,11 @@
                         </li>
                     </ul>
                 </li>
-
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link bg-warning">
                         <i class="nav-icon fas fa-laptop-code"></i>
                         <p>
-                            Salidas
+                            Salida Materia Prima
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -86,6 +85,68 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link bg-warning">
+                        <i class="nav-icon far fa-images"></i>
+                        <p>
+                            Almacen Productos
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('producto.index')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon text-primary"></i>
+                                <p>Productos </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link bg-warning">
+                        <i class="nav-icon far fa-images"></i>
+                        <p>
+                            Gestón Clientes
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('cliente.index')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon text-primary"></i>
+                                <p>Clientes </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link bg-warning">
+                        <i class="nav-icon far fa-images"></i>
+                        <p>
+                            Gestón Ventas
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('venta.create')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon text-primary"></i>
+                                <p>Nueva Venta </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('venta.index')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon text-primary"></i>
+                                <p>Lista De Ventas </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
 
             </ul>
         </nav>

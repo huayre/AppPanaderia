@@ -23,7 +23,7 @@ Route::get('logout',function(){
 Route::get('/','Auth\LoginController@showLoginForm');
 
 //frontend
-Route::get('/','HomeController@index')->name('inicio');
+Route::get('/inicio','HomeController@index')->name('inicio');
 Route::get('listsubcategorie{id}','Frond\ListController@getListArticleSubcategorie')->name('listsubcategorie');
 Route::get('detallesproductos{id}','Frond\ListController@GetDetalleProduct')->name('detalleproducto');
 Route::get('getPhotos/{id}','Frond\ListController@getPhotos')->name('getPhotos');
@@ -45,6 +45,11 @@ Route::group(['middleware'=>'auth'],function(){
 //carrusel
     Route::resource('carrusel','Admin\CarruselController');
     Route::resource('salida','Admin\SalidaController');
+    //producto
+    Route::resource('producto','ProductoController');
+    //gestión clientes
+    Route::resource('cliente','ClienteController');
+    Route::resource('venta','VentaController');
 });
 
 

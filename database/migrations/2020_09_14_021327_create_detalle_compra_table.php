@@ -15,8 +15,8 @@ class CreateDetalleCompraTable extends Migration
     {
         Schema::create('detalle_compra', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('ingreso_id')->unsigned();;
-            $table->bigInteger('article_id')->unsigned();;
+            $table->bigInteger('ingreso_id')->unsigned();
+            $table->bigInteger('article_id')->unsigned();
             $table->integer('cantidad_compra');
             $table->float('precio_compra');
             $table->foreign('ingreso_id')->references('id')->on('ingresos')->onDelete('cascade');
