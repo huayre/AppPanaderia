@@ -21,6 +21,7 @@ class CreateVentasTable extends Migration
             $table->bigInteger('cliente_id')->unsigned();
             $table->date('fecha_compra');
             $table->float('precio_compra');
+            $table->string('estado');
             $table->foreign('cliente_id')->references('id')->on('clientes')->onDelete('cascade');
             $table->timestamps();
         });

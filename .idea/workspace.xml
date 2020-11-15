@@ -20,26 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c03a930-3c59-4827-a572-8a66c154336e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/cliente/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/cliente/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/cliente/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/cliente/modal_delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/cliente/modal_description.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/cliente/modal_sizes_list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/producto/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/producto/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/producto/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/producto/modal_actualizar_stock.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/producto/modal_delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/producto/modal_description.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/producto/modal_sizes_list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/venta/detalle_venta.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/venta/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/venta/lista.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/venta/modal_agregar_productos.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/reporte/cliente.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/reporte/perdidas.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/reporte/producto.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/reporte/ventas.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/App/Admin/venta/modal_darbaja.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ecommerce.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_14_021327_create_detalle_compra_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_14_021327_create_detalle_compra_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/App/Admin/article/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/App/Admin/article/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VentaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VentaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Venta.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Venta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_10_213723_create_ventas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_10_213723_create_ventas_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/App/Admin/venta/lista.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/App/Admin/venta/lista.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/aside.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -172,6 +167,11 @@
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hTbuvmD2gh6Fa56NX2e5qzTo2r" />
@@ -182,7 +182,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/App/Admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/App/Admin/reporte" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -195,11 +195,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\TRABAJOS\PROYECTOS PARTICULARES\AppPanaderia\resources\views\App\Admin\reporte" />
+      <recent name="E:\TRABAJOS\PROYECTOS PARTICULARES\AppPanaderia\resources\views\App\Admin\venta" />
       <recent name="E:\TRABAJOS\PROYECTOS PARTICULARES\AppPanaderia\resources\views\App\Admin" />
       <recent name="E:\TRABAJOS\PROYECTOS PARTICULARES\AppPanaderia\resources\views\App\Admin\producto" />
       <recent name="E:\TRABAJOS\PROYECTOS PARTICULARES\AppPanaderia" />
-      <recent name="D:\Ecommerce\resources\views\App\Admin\salida" />
-      <recent name="D:\Ecommerce" />
     </key>
   </component>
   <component name="RunManager">
@@ -218,7 +218,9 @@
       <updated>1600038256148</updated>
       <workItem from="1600038257252" duration="25130000" />
       <workItem from="1605015564877" duration="7434000" />
-      <workItem from="1605043673478" duration="10347000" />
+      <workItem from="1605043673478" duration="12005000" />
+      <workItem from="1605134327222" duration="16000" />
+      <workItem from="1605398513476" duration="8763000" />
     </task>
     <servers />
   </component>
@@ -242,10 +244,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600058867173" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605054337267">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605399161874">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1605054337267" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1605399161874" />
     <state x="510" y="86" key="NewPhpClassDialog" timestamp="1600058850020">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

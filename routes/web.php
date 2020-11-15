@@ -50,6 +50,11 @@ Route::group(['middleware'=>'auth'],function(){
     //gestión clientes
     Route::resource('cliente','ClienteController');
     Route::resource('venta','VentaController');
+    Route::get('devolucion/{id}','VentaController@devolucion')->name('devolucion');
+    Route::get('reporteventas','ReporteController@reporteventas')->name('reporteventas');
+    Route::get('reporteclientes','ReporteController@reporteclientes')->name('reporteclientes');
+    Route::get('productos','ReporteController@productos')->name('productos');
+    Route::get('perdida','ReporteController@perdida')->name('perdida');
 });
 
 

@@ -56,7 +56,8 @@ class VentaController extends Controller
             'numero_comprobante'                =>$request->numero_comprobante,
             'cliente_id'                        =>$request->cliente_id,
             'fecha_compra'                      =>$request->fecha_compra,
-            'precio_compra'                     =>$PrecioTotal
+            'precio_compra'                     =>$PrecioTotal,
+            'estado'                            =>"activo"
         ]);
 
         $contador=0;
@@ -101,9 +102,14 @@ class VentaController extends Controller
      * @param  \App\Venta  $venta
      * @return \Illuminate\Http\Response
      */
-    public function edit(Venta $venta)
+    public function devolucion($id)
     {
-        //
+        $venta=Venta::find($id);
+        $venta->update([
+            'estado'=>'inactivo'
+        ]);
+        toastr()->success('La venta fue dado de baja correctamente!');
+        return redirect()->route('venta.index');
     }
 
     /**

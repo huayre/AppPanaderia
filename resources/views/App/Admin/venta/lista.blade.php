@@ -13,24 +13,52 @@
                 <th>Número Comprobante</th>
                 <th>Precío Compra</th>
                 <th>Fecha Compra</th>
-                <th>Ver Detalle</th>
+                <th>Pciones</th>
             </tr>
             </thead>
             <tbody>
             @foreach($ListaVenta as $cat)
-                <tr>
-                    <td><small class="badge badge-primary badge-pill">{{$loop->index+1}}</small></td>
-                    <td>{{$cat->cliente->nombre}}</td>
-                    <td>{{$cat->tipo_comprobante}}</td>
-                    <td>{{$cat->serie_comprobante}}</td>
-                    <td>{{$cat->numero_comprobante}}</td>
-                    <td>{{$cat->precio_compra}}</td>
-                    <td>{{$cat->fecha_compra}}</td>
-                    <td>
-                        <a href="{{route('venta.show',$cat->id)}}" class="btn btn-info">Detalle</a>
-                    </td>
+                @if($cat->estado=='activo')
+                    <tr class="table-success" >
+                        <td><small class="badge badge-primary badge-pill">{{$loop->index+1}}</small></td>
+                        <td>{{$cat->cliente->nombre}}</td>
+                        <td>{{$cat->tipo_comprobante}}</td>
+                        <td>{{$cat->serie_comprobante}}</td>
+                        <td>{{$cat->numero_comprobante}}</td>
+                        <td>{{$cat->precio_compra}}</td>
+                        <td>{{$cat->fecha_compra}}</td>
 
-                </tr>
+                        <td>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" data-toggle="modal" data-target="#modal-darbaja-{{$cat->id}}" class="text-danger btn btn-default">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                                @include('App.Admin.venta.modal_darbaja')
+                                <a href="{{route('venta.show',$cat->id)}}" class="btn btn-info">Detalle</a>
+                            </div>
+
+                        </td>
+
+                    </tr>
+                @endif
+                @if($cat->estado=='inactivo')
+                    <tr class="table-danger" >
+                        <td><small class="badge badge-primary badge-pill">{{$loop->index+1}}</small></td>
+                        <td>{{$cat->cliente->nombre}}</td>
+                        <td>{{$cat->tipo_comprobante}}</td>
+                        <td>{{$cat->serie_comprobante}}</td>
+                        <td>{{$cat->numero_comprobante}}</td>
+                        <td>{{$cat->precio_compra}}</td>
+                        <td>{{$cat->fecha_compra}}</td>
+
+                        <td>
+                            <div class="d-flex justify-content-center">
+                                <a href="{{route('venta.show',$cat->id)}}" class="btn btn-info">Detalle</a>
+                            </div>
+                        </td>
+
+                    </tr>
+                @endif
 
             @endforeach
             </tbody>

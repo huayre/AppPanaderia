@@ -12,6 +12,7 @@ class Venta extends Model
         'numero_comprobante',
         'cliente_id',
         'fecha_compra',
+        'estado',
         'precio_compra'
     ];
 

@@ -106,7 +106,7 @@
                     <a href="#" class="nav-link bg-warning">
                         <i class="nav-icon far fa-images"></i>
                         <p>
-                            Gestón Clientes
+                            Gestión Clientes
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -145,7 +145,47 @@
                         </li>
                     </ul>
                 </li>
-
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link bg-warning">
+                        <i class="nav-icon far fa-images"></i>
+                        <p>
+                            Gestión de Reportes
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('reporteventas')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon text-primary"></i>
+                                <p>Reporte Ventas </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('perdida')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon text-primary"></i>
+                                <p>Reporte de Perdidas </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('reporteclientes')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon text-primary"></i>
+                                <p>Reporte de clientes </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('productos')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon text-primary"></i>
+                                <p>Reporte de Productos </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
 
             </ul>
